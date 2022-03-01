@@ -120,7 +120,7 @@ const AddData = () => {
             >Reset Form</Button>
             <Button
             onClick={()=>{dispatch(updateDataAsync(envio))}}
-              className="btn btn-danger mt-5 me-3 position-absolute top-50 translate-middle-y end-0"
+              className="btn btn-warning mt-5 me-3 position-absolute top-50 translate-middle-y end-0"
               type='button'
             >Editar</Button>
           </form>

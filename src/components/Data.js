@@ -34,14 +34,14 @@ const Data = ({ setEnvio }) => {
                                 <td>{dat.quantity}</td>
                                 <td>{dat.price}</td>
                                 <td>
-                                    <Button className='my-3'
-                                        variant="warning"
+                                    <Button className='my-3 mx-3'
+                                        variant="danger"
                                         onClick={() => { dispatch(deleteDataAsync(dat.id))}}
                                     >
                                         Borrar
                                     </Button>
                                     <Button
-                                        variant="outline-warning"
+                                        variant="warning"
                                         onClick={()=>handleModify(dat)}
                                     >
                                         Editar
