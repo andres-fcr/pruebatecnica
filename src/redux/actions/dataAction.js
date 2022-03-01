@@ -1,7 +1,6 @@
 import { addDoc, collection, deleteDoc, doc, getDocs, query, where, updateDoc  } from "firebase/firestore"
 import { db } from "../../firebase/firebaseConfig"
-import { typesData, typesMovies } from "../types/types"
-import { v4 as uuidv4 } from 'uuid';
+import { typesData } from "../types/types"
 
 
 export const registerDataAsync = (newRecipe) => {

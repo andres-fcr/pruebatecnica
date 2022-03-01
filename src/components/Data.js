@@ -1,12 +1,10 @@
 import React from 'react'
 import { Button, Table } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { deleteDataAsync } from '../redux/actions/dataAction';
 
 const Data = ({ setEnvio }) => {
 
-    const navigate = useNavigate()
     const dispatch = useDispatch()
     const { data } = useSelector(store => store.data);
 

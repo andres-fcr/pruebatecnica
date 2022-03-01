@@ -11,12 +11,6 @@ export const typesCart ={
     clearCart: 'ClearCart'
 }
 
-export const typesCounter = {
-    INCREMENT: "INCREMENT",
-    DECREMENT: "DECREMENT",
-    RESET: "RESET"
-}  
-
 export const typesData = {
     listar:'Listar',
     nueva: 'Nueva',

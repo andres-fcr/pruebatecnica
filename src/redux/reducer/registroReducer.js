@@ -8,7 +8,6 @@ export const registroReducer = (state = {}, action) => {
                 email: action.payload.email,
                 password: action.payload.password
             }
-    
         default:
             return state
     }

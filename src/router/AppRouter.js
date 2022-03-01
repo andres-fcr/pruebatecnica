@@ -6,7 +6,6 @@ import AddData from '../components/AddData'
 import Home from '../components/Home'
 import Login from '../components/Login'
 import Register from '../components/Register'
-import getData from '../helpers/getData'
 import { listDataAsync } from '../redux/actions/dataAction'
 
 
@@ -22,7 +21,7 @@ const AppRouter = () => {
   
     useEffect(() => {
         dispatch(listDataAsync())
-    }, [])
+    }, [dispatch])
 
     //    const {data}= useSelector(store=> store.data) 
 

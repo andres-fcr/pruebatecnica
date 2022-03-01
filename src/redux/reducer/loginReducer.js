@@ -9,8 +9,6 @@ export const loginReducer = (state = {}, action) => {
             }
         case types.logout:
             return {}
-        case types.registro:
-            return state
         default:
             return state
     }

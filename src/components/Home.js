@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { addToCart, ClearCart } from '../redux/actions/cartAction'
-import { listDataAsync, registerDataAsync } from '../redux/actions/dataAction'
+import { listDataAsync } from '../redux/actions/dataAction'
 import { Titulo } from '../styles/HomeStyles'
 import Item from './Item'
 
@@ -14,7 +14,7 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(listDataAsync())
-    }, [])
+    }, [dispatch])
 
     const { data } = useSelector(store => store.data)
     console.log(data);
@@ -55,7 +55,7 @@ const Home = () => {
             >Editar</Button>
             <Titulo className='row'>
                 <h1 className='fs-6'>Ingredientes</h1>
-                <h2 className='fw-bold mb-4'></h2>
+                <h2 className='fw-bold mb-4'>Risotto de setas (vegano)</h2>
                 <Button variant="link" className='col' >Seleccionar Todo</Button>
                 <Button variant="link" className='col me-5' onClick={clearC}>Cancelar Seleccíón</Button>
                 <hr />

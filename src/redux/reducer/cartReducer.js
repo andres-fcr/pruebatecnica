@@ -1,12 +1,8 @@
-
 import { typesCart } from "../types/types"
-
-
 
 const initialState = {
     cart: []
 }
-
 
 export const shoppingReducer = (state = initialState, action) => {
     switch (action.type) {

@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { loginAsync, loginFacebook, loginGoogle, logoutAsync } from '../redux/actions/actionLog'
-import { Border, Centro } from '../styles/LogStyles'
+import { Centro } from '../styles/LogStyles'
 
 const Login = () => {
 

@@ -3,7 +3,7 @@ import { Button, Card } from 'react-bootstrap'
 
 const Item = ({ data, addToCart }) => {
 
-    const { product, brand, quantity, price, items, id } = data
+    const { product, brand, quantity, price, items } = data
 
 
     return (
