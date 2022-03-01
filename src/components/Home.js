@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
 import { addToCart, ClearCart } from '../redux/actions/cartAction'
 import { listDataAsync } from '../redux/actions/dataAction'
 import { Titulo } from '../styles/HomeStyles'
@@ -44,7 +45,6 @@ const Home = () => {
         const add = cart.reduce(reducer, 0)
         return add
     }
-
 
     return (
         <div className='col w-75 mx-auto mt-5 mb-5'>
@@ -91,7 +91,13 @@ const Home = () => {
                             </div>
 
                         </div>
-                        <Button className="mx-auto" variant="success">Comprar Ingredientes {totalPrice() + 7}  </Button>
+                        <Button onClick={()=>(Swal.fire(
+                            'Listo!',
+                            'Tu pago ha sido confirmado',
+                            'success'
+                        ))} className="mx-auto" variant="success">Comprar Ingredientes {totalPrice() + 7}
+
+                        </Button>
                     </div>
 
                 </div>
